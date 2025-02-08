@@ -226,7 +226,7 @@ impl std::fmt::Display for Value {
     fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
         match self {
             Value::Int(i) => write!(f, "{}", i),
-            Value::Float(fl) => write!(f, "{:.?}", fl),
+            Value::Float(fl) => write!(f, "{:?}", fl),
             Value::Bool(b) => write!(f, "{}", b),
             Value::Nil => write!(f, "nil"),
             Value::String(s) => write!(f, "{}", s),
